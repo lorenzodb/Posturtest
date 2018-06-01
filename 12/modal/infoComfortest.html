@@ -1,0 +1,30 @@
+<md-dialog aria-label="Person Details Modal" class="dialog_width">
+    <!-- -->
+        <md-toolbar style="background-color: #071d50;">
+            <div class="md-toolbar-tools">
+                <h2 style="text-transform: uppercase; font-weight: 600;">Informazioni sul Comfortest</h2>
+                <span flex></span>
+                <md-button class="md-icon-button" ng-click="cancel()">
+                    <md-icon class="material-icons" aria-label="Close dialog">close</md-icon>
+                </md-button>
+            </div>
+        </md-toolbar>
+
+        <md-dialog-content>
+	        <div style="padding: 2%;">
+	        	<span style="width: 30%;height: 37px;font-size: 25px;float: left;line-height: 37px;">Numero di Matricola:</span>
+	            <input style=" border:none; width: 30%;font-size: 25px; float: left;" ng-model="matricola" type="text">
+	        </div>
+	        <div style="padding: 2%;">
+	        	<span style="width: 30%;height: 37px;font-size: 25px;float: left;line-height: 37px;">Account Mail:</span>
+	            <input style=" border:none; width: 30%;font-size: 25px; float: left;" ng-model="accountmail" type="text">
+	        </div>
+        </md-dialog-content>
+
+        <md-dialog-actions layout="row">
+            <span flex></span>
+            <md-button style="padding: 0 14px; background-color: #071d50;" class="md-primary md-raised" ng-click="saveInfoComfortest()" >
+                <span >Salva</span>
+            </md-button>
+        </md-dialog-actions>
+</md-dialog>
